@@ -97,6 +97,8 @@ BitmapReadError ReadBitmap(const char* fileName, Bitmap** pBitmap)
         }
     }
 
+    fclose(fpBitmap);
+
     return BMPR_ERR_OK;    
 }
 
