@@ -25,7 +25,7 @@ BitmapWriteError WriteBitmap(Bitmap* bitmap, const char* fileName)
     }
     else
     {
-        fName = (char*)malloc(strlen(fileName));
+        fName = (char*)malloc(strlen(fileName) + 1);
         strcpy(fName, fileName);
     }
 
